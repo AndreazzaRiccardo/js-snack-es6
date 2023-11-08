@@ -26,3 +26,17 @@ Usiamo i nuovi metodi degli array foreach o filter.
 1. Destrutturo l'array;
 2. Individuo la bici con il peso minore;
 3. Con un ciclo FOR IN prendo tutti i valori dell'oggetto bici individuato e li stampo a schermo;
+
+### SNACK 2
+
+**DATI:**
+
+1. Creo un'array di ogetti (teams) con le proprietà nome, puntiFatti e falliSubiti;
+
+**LOGICA:**
+
+1. Creo una funzione per generare numeri random;
+2. Creo una variabile array da riempire con il mio nuovo array;
+3. Con un ciclo forEach prendo singolarmente ogni oggetto e sostituisco puntiFatti e falliSubiti con numero random invocando la mia funzione;
+4. Sempre all'interno del ciclo vado a destrutturare ogni oggetto team in modo da avere solo i valori nome e falliSubiti da pushare in un nuovo oggetto, all'interno del mio array vuoto;
+5. Faccio consol log di ogni singolo team all'interno del ciclo for e del nuovo array creato;
