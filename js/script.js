@@ -21,13 +21,13 @@ const bikes = [
 ];
 
 let lightWeight = bikes[0].peso;
-let lightBike   = "";
+let lightBike   = bikes[0].nome;
 
 for (let i = 0; i < bikes.length; i++) {
 
-    if(bikes[i].peso < lightWeight){
-        lightWeight = bikes[i].peso;
+    if(bikes[i].peso <= lightWeight){
         lightBike   = bikes[i].nome;
+        lightWeight = bikes[i].peso;
     }
 }
 
@@ -79,7 +79,7 @@ teams.forEach(team => {
     newArrayTeams.push({
         nome,
         falliSubiti
-    })
+    });
 
     console.log(team);
 });
