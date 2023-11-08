@@ -21,11 +21,13 @@ const bikes = [
 ];
 
 let lightWeight = bikes[0].peso;
-let lightBike = "";
+let lightBike   = "";
+
 for (let i = 0; i < bikes.length; i++) {
+
     if(bikes[i].peso < lightWeight){
         lightWeight = bikes[i].peso;
-        lightBike = bikes[i].nome;
+        lightBike   = bikes[i].nome;
     }
 }
 
@@ -68,25 +70,50 @@ const teams = [
 ];
 
 let newArrayTeams = [];
+
 teams.forEach(team => {
-     team.puntiFatti = generateRndNumber();
-     team.falliSubiti = generateRndNumber();
-     let {nome, puntiFatti, falliSubiti} = team;
-     newArrayTeams.push({
-         nome,
-         falliSubiti
-     })
-     console.log(team);
- });
+    team.puntiFatti  = generateRndNumber();
+    team.falliSubiti = generateRndNumber();
 
- console.log(newArrayTeams);
+    let {nome, puntiFatti, falliSubiti} = team;
+    newArrayTeams.push({
+        nome,
+        falliSubiti
+    })
 
- function generateRndNumber(){
+    console.log(team);
+});
+
+console.log(newArrayTeams);
+
+function generateRndNumber(){
     return Math.floor(Math.random() * 50) + 1;
 }
 
- 
 
+// ***********************************************************************************
+
+// SNACK 3
+
+const myArray = ["Cane", "Gatto", "Coniglio", "Criceto", "Serpente"];
+
+/**
+ * Dato in input un'array e due numeri, restituisci un nuovo array contenente solo i valori presenti nell'indice tra il primo numero inserito e il secondo
+ * @param {array} array
+ * @param {number} startNumber
+ * @param {number} endNumber
+ * @returns {array} newArray
+ */ function getSubArray (array, startNumber, endNumber) {
+    let newArray = [];
+    array.forEach((currElem, index) => {
+        if(index >= startNumber && index <= endNumber){
+            newArray.push(currElem);
+        } 
+    });
+    return newArray;
+ }
+
+ console.log(getSubArray(myArray, 4, 1));
 
 
 

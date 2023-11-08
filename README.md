@@ -40,3 +40,21 @@ Usiamo i nuovi metodi degli array foreach o filter.
 3. Con un ciclo forEach prendo singolarmente ogni oggetto e sostituisco puntiFatti e falliSubiti con numero random invocando la mia funzione;
 4. Sempre all'interno del ciclo vado a destrutturare ogni oggetto team in modo da avere solo i valori nome e falliSubiti da pushare in un nuovo oggetto, all'interno del mio array vuoto;
 5. Faccio consol log di ogni singolo team all'interno del ciclo for e del nuovo array creato;
+
+### SNACK 3
+
+**DATI:**
+
+1. Creo un'array per testare la mia funzione;
+
+**LOGICA:**
+
+1. Creo una funzione che prenda come input 3 parametri, il primo sarà un array, mentre il secondo e il terzo saranno numeri:
+
+    -Creo una variabile array vuota;
+    -Con un ciclo forEach scorro l'array inserito nei parametri di funzione;
+    -Gli dico che:
+        SE l'indice dell'elemento che sto scorrendo è maggiore o uguale al primo numero dei parametri E minore o uguale del secondo:
+        allora pushalo nella mia variabile array;
+    -Ritorno il mio nuovo array cosi creato;
+
